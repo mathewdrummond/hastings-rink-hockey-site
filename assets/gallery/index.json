@@ -11,6 +11,14 @@
     {
       "src": "assets/gallery/hrhc_gear_flatlay.jpg",
       "alt": "Hrhc Gear Flatlay"
+    },
+    {
+      "src": "assets/gallery/hrhc_gear_flatlay_alt.jpg",
+      "alt": "Hrhc Gear Flatlay Alt"
+    },
+    {
+      "src": "assets/gallery/hrhc_poster_essential-gear.jpg",
+      "alt": "Hrhc Poster Essential Gear"
     }
   ],
   "videos": []

@@ -1,0 +1,17 @@
+{
+  "photos": [
+    {
+      "src": "assets/gallery/equipment-flatlay.svg",
+      "alt": "Equipment Flatlay"
+    },
+    {
+      "src": "assets/gallery/players-huddle.svg",
+      "alt": "Players Huddle"
+    },
+    {
+      "src": "assets/gallery/training-faceoff.svg",
+      "alt": "Training Faceoff"
+    }
+  ],
+  "videos": []
+}

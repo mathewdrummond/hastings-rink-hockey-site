@@ -30,6 +30,25 @@ section[id]{background:transparent !important;}
 header{background-color:#1A1A1A;}
 footer{background-color:#0f0f0f;}
 </style>
+<style id="hero-blend">
+/* Blend the hero into the page gradient */
+#heroFigure{isolation:isolate;}
+#heroFigure::before{
+  content:""; position:absolute; inset:-20%;
+  background: radial-gradient(60% 60% at 60% 40%, rgba(255,106,0,.22), transparent 60%);
+  filter: blur(28px); opacity:.7; pointer-events:none; z-index:0;
+}
+#heroFigure::after{
+  content:""; position:absolute; inset:0; pointer-events:none; z-index:1;
+  background: linear-gradient(180deg, rgba(0,0,0,.38) 0%, transparent 35%, transparent 65%, rgba(0,0,0,.38) 100%);
+}
+#heroFigure .hero-img{
+  position:relative; z-index:2; display:block; width:100%; height:auto;
+  filter: saturate(.96) contrast(1.05) brightness(.98);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
+          mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
+}
+</style>
 </head><body class="bg-gray-50 text-zinc-900 scroll-smooth">
 <header class="fixed top-0 inset-x-0 z-50 bg-clubBrown text-white shadow"><div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
   <div class="flex items-center gap-3"><img src="logo.png" class="h-10 w-auto" alt="Hastings crest"/><span class="font-bold">Hastings Roller Hockey Club</span></div>
@@ -40,7 +59,7 @@ footer{background-color:#0f0f0f;}
   <div><h1 class="text-4xl md:text-6xl font-extrabold leading-tight drop-shadow">Skate • Pass • Score</h1>
   <p class="mt-4 text-lg md:text-xl">Based at Windsor Park, Hastings — quad-skate rink hockey for all ages.</p>
   <div class="mt-8 flex gap-4"><a href="#join" class="bg-white text-clubBrown font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-200">Try a Session</a><a href="#korea" class="border border-white text-white font-semibold px-6 py-3 rounded-full hover:bg-white/10">Latest News</a></div></div>
-  <div class="relative"><img src="assets/hero-eagle.jpg" alt="Essential Gear poster" class="rounded-xl shadow-soft border border-white/20"/></div>
+  <div id="heroFigure" class="relative rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-soft"><img src="assets/hero-eagle.jpg" alt="Hastings eagle hero" class="hero-img w-full h-auto block" /></div>
 </div></section>
 
 <section id="about" class="py-16 bg-white"><div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">

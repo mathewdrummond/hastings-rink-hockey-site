@@ -18,47 +18,47 @@
 #gallery .gallery-item:hover::after{ opacity:.9; }
 </style>
 <style id="page-gradient">
-html,body{min-height:100%;}
-body{
-  background: linear-gradient(180deg,#1A1A1A 0%, #141414 55%, #0C0C0C 100%) fixed !important;
-  color:#ffffff !important;
-}
-section[id]{background:transparent !important;}
-header{background-color:#1A1A1A;}
-footer{background-color:#0f0f0f;}
+  html,body{min-height:100%;}
+  body{
+    background: linear-gradient(180deg,#1A1A1A 0%,
+                                rgba(255,106,0,0.06) 28%,
+                                #0C0C0C 100%) fixed !important;
+    color:#ffffff !important;
+  }
+  section[id]{background:transparent !important;}
+  header{background-color:#1A1A1A;}
+  footer{background-color:#0f0f0f;}
 </style>
 <style id="hero-blend">
-/* Blend the hero into the page gradient */
-#heroFigure{isolation:isolate;}
-#heroFigure::before{
-  content:""; position:absolute; inset:-20%;
-  background: radial-gradient(60% 60% at 60% 40%, rgba(255,106,0,.22), transparent 60%);
-  filter: blur(28px); opacity:.7; pointer-events:none; z-index:0;
-}
-#heroFigure::after{
-  content:""; position:absolute; inset:0; pointer-events:none; z-index:1;
-  background: linear-gradient(180deg, rgba(0,0,0,.38) 0%, transparent 35%, transparent 65%, rgba(0,0,0,.38) 100%);
-}
-#heroFigure .hero-img{
-  position:relative; z-index:2; display:block; width:100%; height:auto;
-  filter: saturate(.96) contrast(1.05) brightness(.98);
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
-          mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
-}
+  #heroFigure{isolation:isolate; border-radius:1rem; overflow:hidden; box-shadow:0 10px 40px rgba(0,0,0,.45);}
+  #heroFigure::before{
+    content:""; position:absolute; inset:-20%;
+    background: radial-gradient(60% 60% at 60% 40%, rgba(255,106,0,.22), transparent 60%);
+    filter: blur(28px); opacity:.7; pointer-events:none; z-index:0;
+  }
+  #heroFigure::after{
+    content:""; position:absolute; inset:0; pointer-events:none; z-index:1;
+    background: linear-gradient(180deg, rgba(0,0,0,.38) 0%, transparent 35%, transparent 65%, rgba(0,0,0,.38) 100%);
+  }
+  #heroFigure .hero-img{
+    position:relative; z-index:2; display:block; width:100%; height:auto;
+    filter: saturate(.96) contrast(1.05) brightness(.98);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
+            mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
+  }
 </style>
 <style id="text-override">body * { color: #FFFFFF !important; }</style>
+<style id="dark-card-theme">
+  .bg-white,.bg-gray-50,.bg-gray-100{background-color:rgba(22,22,22,.66)!important;color:#fff!important;}
+  .text-gray-600,.text-gray-700,.text-slate-700{color:#e8e8e8!important;}
+  h2, h3{ color:#FF6A00; }
+  .btn-primary{ background:#FF6A00; color:#000; }
+  .btn-primary:hover{ filter:brightness(1.1); }
+</style>
 </head><body class="bg-gray-50 text-zinc-900 scroll-smooth">
 <header class="fixed top-0 inset-x-0 z-50 bg-clubBrown text-white shadow"><div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
   <div class="flex items-center gap-3"><img src="logo.png" class="h-10 w-auto" alt="Hastings crest"/><span class="font-bold">Hastings Roller Hockey Club</span></div>
-  <nav class="hidden md:flex gap-6 font-medium">
-      <a href="#home" class="hover:text-clubGold">Home</a>
-      <a href="#about" class="hover:text-clubGold">About</a>
-      <a href="#rinkhockey" class="hover:text-clubGold">Rink Hockey</a>
-      <a href="#equipment" class="hover:text-clubGold">Equipment</a>
-      <a href="#gallery" class="hover:text-clubGold">Gallery</a>
-      <a href="#join" class="hover:text-clubGold">Join</a>
-      <a href="#contact" class="hover:text-clubGold">Contact</a>
-    </nav>
+  <nav class="flex items-center gap-6 text-sm"><a href="#home" class="hover:text-clubGold">Home</a><a href="#about" class="hover:text-clubGold">About</a><a href="#rinkhockey" class="hover:text-clubGold">Rink Hockey</a><a href="#equipment" class="hover:text-clubGold">Equipment</a><a href="#gallery" class="hover:text-clubGold">Gallery</a><a href="#join" class="hover:text-clubGold">Join</a><a href="#contact" class="hover:text-clubGold">Contact</a></nav>
 </div></header>
 
 <section id="home" class="pt-24  text-white"><div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">

@@ -17,18 +17,6 @@
 #gallery .gallery-item:hover img{ transform:scale(1.03); }
 #gallery .gallery-item:hover::after{ opacity:.9; }
 </style>
-<style id="page-gradient">
-  html,body{min-height:100%;}
-  body{
-    background: linear-gradient(180deg,#1A1A1A 0%,
-                                rgba(255,106,0,0.06) 28%,
-                                #0C0C0C 100%) fixed !important;
-    color:#ffffff !important;
-  }
-  section[id]{background:transparent !important;}
-  header{background-color:#1A1A1A;}
-  footer{background-color:#0f0f0f;}
-</style>
 <style id="hero-blend">
   #heroFigure{isolation:isolate; border-radius:1rem; overflow:hidden; box-shadow:0 10px 40px rgba(0,0,0,.45);}
   #heroFigure::before{
@@ -48,13 +36,6 @@
   }
 </style>
 <style id="text-override">body * { color: #FFFFFF !important; }</style>
-<style id="dark-card-theme">
-  .bg-white,.bg-gray-50,.bg-gray-100{background-color:rgba(22,22,22,.66)!important;color:#fff!important;}
-  .text-gray-600,.text-gray-700,.text-slate-700{color:#e8e8e8!important;}
-  h2, h3{ color:#FF6A00; }
-  .btn-primary{ background:#FF6A00; color:#000; }
-  .btn-primary:hover{ filter:brightness(1.1); }
-</style>
 <style id="supplier-cards">
   .supplier-grid{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:1rem}
   @media(min-width:768px){.supplier-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -64,6 +45,46 @@
   .supplier-card p{margin:.25rem 0 .75rem 0;color:#e8e8e8}
   .supplier-card a{color:#fff;text-decoration:underline}
   .supplier-note{font-size:.9rem;opacity:.85;margin-top:.75rem}
+</style>
+<style id="concept-b-theme">
+  /* Concept B: warm off‑white theme with orange accents */
+  body {
+    background-color: #F5F5EF;
+    color: #2E2E2E;
+  }
+  header {
+    background-color: #FFFFFF;
+    color: #FF6A00;
+  }
+  footer {
+    background-color: #F0EEE7;
+    color: #6A6A6A;
+  }
+  section[id] {
+    background-color: #FFFFFF;
+    border-top: 1px solid #E5E1D8;
+    padding-top: 2rem;
+  }
+  /* Lighten supplier and other cards */
+  .supplier-card, .bg-white, .bg-gray-50, .bg-gray-100 {
+    background-color: #FAF7F1 !important;
+    color: #2E2E2E !important;
+    border: 1px solid #E5E1D8;
+  }
+  .text-gray-600, .text-gray-700, .text-slate-700 {
+    color: #2E2E2E !important;
+  }
+  .btn-primary {
+    background-color: #FF6A00;
+    color: #FFFFFF;
+  }
+  .btn-primary:hover {
+    filter: brightness(1.05);
+  }
+  /* Soften the hero figure overlay */
+  #heroFigure::before {
+    background: radial-gradient(60% 60% at 60% 40%, rgba(255,106,0,0.15), transparent 60%);
+  }
 </style>
 </head><body class="bg-gray-50 text-zinc-900 scroll-smooth">
 <header class="fixed top-0 inset-x-0 z-50 bg-clubBrown text-white shadow"><div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">

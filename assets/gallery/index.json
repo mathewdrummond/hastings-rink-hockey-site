@@ -45,5 +45,24 @@
       "alt": "Hrhc Poster Essential Gear"
     }
   ],
-  "videos": []
+  "videos": [
+    {
+      "platform": "youtube",
+      "id": "shOiMl3rURQ",
+      "url": "https://www.youtube.com/watch?v=shOiMl3rURQ",
+      "title": "Rink Hockey Wanganui 2025 U15 Taranaki vs Hastings 1st half"
+    },
+    {
+      "platform": "youtube",
+      "id": "lu0TtV96xcU",
+      "url": "https://www.youtube.com/watch?v=lu0TtV96xcU",
+      "title": "Rink Hockey Wanganui 2025 U15 Taranaki vs Hastings 2nd half"
+    },
+    {
+      "platform": "youtube",
+      "id": "sWzdshB_os8",
+      "url": "https://www.youtube.com/watch?v=sWzdshB_os8",
+      "title": "Rink Hockey Wanganui 2025 Womans Taranaki vs Hastings 2nd half"
+    }
+  ]
 }

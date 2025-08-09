@@ -1,16 +1,16 @@
 {
   "photos": [
     {
-      "src": "assets/gallery/equipment-flatlay.svg",
-      "alt": "Equipment Flatlay"
+      "src": "assets/gallery/hrhc_action_faceoff_full-sticks_no-helmets.jpg",
+      "alt": "Hrhc Action Faceoff Full Sticks No Helmets"
     },
     {
-      "src": "assets/gallery/players-huddle.svg",
-      "alt": "Players Huddle"
+      "src": "assets/gallery/hrhc_action_hustle_no-helmets.jpg",
+      "alt": "Hrhc Action Hustle No Helmets"
     },
     {
-      "src": "assets/gallery/training-faceoff.svg",
-      "alt": "Training Faceoff"
+      "src": "assets/gallery/hrhc_gear_flatlay.jpg",
+      "alt": "Hrhc Gear Flatlay"
     }
   ],
   "videos": []

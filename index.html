@@ -112,6 +112,13 @@
 </div>
     </div>
   </div>
+
+    <h3 class="text-2xl font-semibold mb-4">Facebook highlights</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-block="fb-videos">
+      <div class="rounded-xl overflow-hidden ring-1 ring-white/10 p-2 bg-black/20">
+  <div class="fb-video" data-href="https://www.facebook.com/share/v/15MftqEwTS/" data-width="auto" data-allowfullscreen="true"></div>
+</div>
+    </div>
 </section>
 <section id="contact" class="py-16 bg-clubBrown text-white"><div class="max-w-6xl mx-auto px-4"><h2 class="text-2xl font-bold">Contact</h2><p class="mt-2">Email: info@hastingsrollerhockey.nz</p></div></section>
 
@@ -128,4 +135,8 @@ function closeBox(){box.classList.add('hidden');box.class.remove('flex');content
 function bindLightbox(){document.querySelectorAll('.gallery-item').forEach(b=>b.addEventListener('click',()=>{const t=b.dataset.type,s=b.dataset.src;let el;if(t==='image'){el=new Image();el.src=s;el.className='w-full rounded-xl shadow-soft'}else if(t==='video'){el=document.createElement('video');el.src=s;el.controls=true;el.autoplay=true;el.className='w-full rounded-xl shadow-soft'}else{el=document.createElement('iframe');el.src=s+(s.includes('?')?'&':'?')+'autoplay=1';el.className='w-full aspect-video rounded-xl shadow-soft';el.allow='autoplay; encrypted-media';el.allowFullscreen=true}openBox(el)}))}
 if(document.readyState!=='loading')loadGallery();else document.addEventListener('DOMContentLoaded',loadGallery);
 closeBtn.addEventListener('click',closeBox);box.addEventListener('click',e=>{if(e.target===box)closeBox()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeBox()});
-</script></body></html>
+</script><div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"
+  nonce="hrhc"></script>
+</body></html>

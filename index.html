@@ -17,13 +17,26 @@
 #gallery .gallery-item:hover img{ transform:scale(1.03); }
 #gallery .gallery-item:hover::after{ opacity:.9; }
 </style>
+<style id="page-gradient">
+/* Global page gradient + readable default text */
+html,body{min-height:100%;}
+body{
+  background: linear-gradient(180deg,#1A1A1A 0%, #141414 55%, #0C0C0C 100%) fixed !important;
+  color:#ffffff !important;
+}
+/* Let the gradient show through each section */
+section[id]{background:transparent !important;}
+/* Keep header/footer solid for contrast */
+header{background-color:#1A1A1A;}
+footer{background-color:#0f0f0f;}
+</style>
 </head><body class="bg-gray-50 text-zinc-900 scroll-smooth">
 <header class="fixed top-0 inset-x-0 z-50 bg-clubBrown text-white shadow"><div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
   <div class="flex items-center gap-3"><img src="logo.png" class="h-10 w-auto" alt="Hastings crest"/><span class="font-bold">Hastings Roller Hockey Club</span></div>
   <nav class="hidden md:flex gap-6">korea"[^>]*>.*?</a>#home" class="hover:text-clubGold">Home</a><a href="#about" class="hover:text-clubGold">About</a><a href="#rinkhockey" class="hover:text-clubGold">Rink Hockey</a><a href="#equipment" class="hover:text-clubGold">Equipment</a><a href="#gallery" class="hover:text-clubGold">Gallery</a><a href="#korea" class="hover:text-clubGold">Korea 2025</a><a href="#join" class="hover:text-clubGold">Join</a><a href="#contact" class="hover:text-clubGold">Contact</a></nav>
 </div></header>
 
-<section id="home" class="pt-24 bg-gradient-to-b from-clubBrown to-clubGold text-white"><div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+<section id="home" class="pt-24  text-white"><div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
   <div><h1 class="text-4xl md:text-6xl font-extrabold leading-tight drop-shadow">Skate • Pass • Score</h1>
   <p class="mt-4 text-lg md:text-xl">Based at Windsor Park, Hastings — quad-skate rink hockey for all ages.</p>
   <div class="mt-8 flex gap-4"><a href="#join" class="bg-white text-clubBrown font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-200">Try a Session</a><a href="#korea" class="border border-white text-white font-semibold px-6 py-3 rounded-full hover:bg-white/10">Latest News</a></div></div>
